@@ -1,0 +1,96 @@
+@import 'night/codeblock.dark.css';
+@import 'night/mermaid.dark.css';
+@import 'night/sourcemode.dark.css';
+@import 'nord-remastered/quartz-milky.css';
+@import 'nord-remastered/nord.css';
+
+:root {
+  --accented-background-color: var(--nord1);
+  --light-header-color: var(--nord6); /* H1-H3 */
+  --select-text-bg-color: var(--nord4);
+  --accent-color: var(--nord4);
+  --background-color: var(--nord0);
+  --font-color: var(--nord5);
+  --header-color: var(--nord4); /* H4-H6 */
+  --border-color: var(--nord2);
+  --link-color: var(--nord8); 
+  --code-bg-color: var(--nord1);
+  --hover-bg-color: var(--nord3); 
+  --control-text-color: var(--font-color); 
+  --side-bar-bg-color: var(--accented-background-color);
+  --control-text-hover-color: var(--header-color);
+  --item-hover-text-color: var(--header-color);
+  --item-hover-bg-color: var(--hover-bg-color); 
+  --bg-color: var(--background-color);
+  --text-color: var(--font-color);
+  --meta-content-color: var(--accent-color);
+  --md-char-color: var(--accent-color);
+  --window-border: 1px solid rgba(0,0,0,.07);
+  --active-file-bg-color: var(--hover-bg-color);
+  --main-content-max-width: 100%;
+}
+
+.outline-item:hover {
+  background-color: var(--hover-bg-color);
+}
+
+#write {
+  cursor: -webkit-image-set(url("night/cursor.png") 1x, url("night/cursor@2x.png") 2x) 8 8, auto;
+}
+
+h1,
+h2,
+h3 {
+  color: var(--light-header-color);
+}
+
+mark {
+  background: var(--nord7)
+}
+
+table tr:nth-child(2n),
+thead {
+    background-color: var(--nord1);
+}
+
+sup.md-footnote {
+  background-color: var(--code-bg-color);
+  color: var(--font-color);
+}
+
+/* right click menu */
+.context-menu {
+  background-color: var(--nord1);
+}
+
+.context-menu.dropdown-menu .divider {
+  background-color: var(--nord3);
+}
+
+/* focus mode */
+.on-focus-mode .md-end-block:not(.md-focus):not(.md-focus-container) * {
+  color: var(--nord1) !important;
+}
+
+.on-focus-mode .md-end-block:not(.md-focus) img,
+.on-focus-mode .md-task-list-item:not(.md-focus-container)>input {
+  opacity: var(--nord1) !important;
+}
+
+.on-focus-mode li[cid]:not(.md-focus-container){
+  color: var(--nord1);
+}
+
+.on-focus-mode .md-fences.md-focus .CodeMirror-code>*:not(.CodeMirror-activeline) *,
+.on-focus-mode .CodeMirror.cm-s-inner:not(.CodeMirror-focused) * {
+  color: var(--nord1) !important;
+}
+
+.on-focus-mode .md-focus,
+.on-focus-mode .md-focus-container {
+  color: var(--light-header-color);
+}
+
+.on-focus-mode #typora-source .CodeMirror-code>*:not(.CodeMirror-activeline) * {
+  color: var(--nord1) !important;
+}
